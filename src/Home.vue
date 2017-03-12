@@ -7,15 +7,19 @@
       span.grey .js
     h2 A slideshow framework for hackers
 
+
+    iframe.github-star(src="https://ghbtns.com/github-btn.html?user=zulko&repo=eagle.js&type=star&count=true&size=large"
+                       frameborder="0" scrolling="0" width="160px" height="30px")
     p.
       Eagle.js is a web-based slideshow framework for Vue.js.
       It supports animations, themes, interactive widgets (for web demos),
       and makes it easy to reuse components, slides and styles across presentations.
 
     p.
-      Most of all, Eagle aims at offering a simple and very hackable API which
-      allows you to get off the beaten tracks and craft the slideshows you really
-      want.
+      Most of all, Eagle aims at offering a simple and very hackable API so you
+      can get off the beaten tracks and craft the slideshows you really want.
+
+
 
     .thumbnails
       .box-card(v-for='slideshow in slideshows')
@@ -62,5 +66,11 @@ export default {
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
+}
+
+.github-star {
+  display: block;
+  margin: 0 auto;
+  margin-top: -10px;
 }
 </style>
