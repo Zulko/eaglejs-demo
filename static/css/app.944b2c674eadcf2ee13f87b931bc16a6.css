@@ -18,7 +18,7 @@ html {
   width: 100%;
   height: auto;
   position: absolute;
-  background-image: url(/static/img/crossword.b5c5ab6.png);
+  background-image: url(/eaglejs-demo/static/img/crossword.b5c5ab6.png);
 }
 .frontpage .content[data-v-0c9bb95d] {
     width: 600px;
@@ -98,7 +98,7 @@ a[data-v-0c9bb95d] {
   /* Solarized Red */
 }
 .eg-theme-agrume .eg-slideshow {
-    background-image: url(/static/img/subtle_symphony.5b921fa.png);
+    background-image: url(/eaglejs-demo/static/img/subtle_symphony.5b921fa.png);
     background-color: #eee;
 }
 .eg-theme-agrume .eg-slide-content, .eg-theme-agrume .subslide {
@@ -917,7 +917,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   /* Tomorrow Purple */
 }
 .eg-theme-gourmet .eg-slideshow {
-    background-image: url(/static/img/handmadepaper.c0d8859.png);
+    background-image: url(/eaglejs-demo/static/img/handmadepaper.c0d8859.png);
 }
 .eg-theme-gourmet .eg-slideshow h3 {
       margin-top: 0.3em;
@@ -1199,4 +1199,4 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=app.d0d97a87492ebfe13f7c63dc49d9577f.css.map*/
+/*# sourceMappingURL=app.944b2c674eadcf2ee13f87b931bc16a6.css.map*/
