@@ -2991,13 +2991,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Think you can help ?")]), _c('div', {
     staticClass: "center"
   }, [_c('img', {
-    staticClass: "shadowbox",
+    staticClass: "computerkid shadowbox",
     attrs: {
       "src": "http://i.imgur.com/AAlntwU.gif"
     }
   })]), _c('p', {
     staticClass: "center"
-  }, [_vm._v("I'm not a frontend person, so "), _c('br'), _vm._v("any contribution is welcome.\n")])]), _c('slide', {
+  }, [_vm._v("I'm not a frontend person, so everyone"), _c('br'), _vm._v("\nis welcome to contribute to "), _c('a', {
+    attrs: {
+      "href": "https://github.com/Zulko/eagle.js",
+      "target": "_blank"
+    }
+  }, [_vm._v(" the repo")]), _vm._v(".\n\n")])]), _c('slide', {
     attrs: {
       "enter": "fadeIn"
     }
@@ -3756,10 +3761,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     click: function click(evt) {
       if (this.mouseNavigation && this.currentSlide.mouseNavigation) {
 
-        if (evt.clientX < 0.1 * document.documentElement.clientWidth) {
+        if (evt.clientX < 0.25 * document.documentElement.clientWidth) {
           evt.preventDefault();
           this.previousStep();
-        } else if (evt.clientX > 0.9 * document.documentElement.clientWidth) {
+        } else if (evt.clientX > 0.75 * document.documentElement.clientWidth) {
           evt.preventDefault();
           this.nextStep();
         }
@@ -4062,4 +4067,4 @@ new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
 /***/ })
 ],[428]);
-//# sourceMappingURL=app.78f886441354df45a431.js.map
+//# sourceMappingURL=app.dee8d4e7e108e741415b.js.map

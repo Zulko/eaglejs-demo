@@ -394,6 +394,12 @@ a[data-v-0c9bb95d] {
 #IntroducingEagle .boredYet .button.next {
   float: right;
 }
+#IntroducingEagle img.computerkid {
+  height: 6.5em;
+}
+#IntroducingEagle a {
+  color: black;
+}
 
 .eg-modal {
   position: absolute;
@@ -1199,4 +1205,4 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=app.944b2c674eadcf2ee13f87b931bc16a6.css.map*/
+/*# sourceMappingURL=app.9b812e9b40467ab32a507cc37ef8fad2.css.map*/
