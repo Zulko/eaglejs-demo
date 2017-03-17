@@ -1,6 +1,6 @@
 # Example slideshows for Eagle.js
 
-This folder/repo contains the source of a demo Eagle.JS webpage featuring a few slideshows. [Here is the page in action]().
+This folder/repo contains the source of a demo Eagle.JS webpage featuring a few slideshows. [Here is the page in action](https://zulko.github.io/eaglejs-demo/#/).
 
 To get started, download the zip of this repo or clone it with:
 ``` bash
