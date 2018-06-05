@@ -122,7 +122,7 @@ export default {
       font-size: 3em;
       color: rgba(255, 255, 255, .6);
     }
-    background-image: url(http://i.imgur.com/rYkJ6I8.jpg);
+    background-image: url(https://i.imgur.com/rYkJ6I8.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -134,7 +134,7 @@ export default {
       text-align: left;
       color: rgba(255, 255, 255, .9);
     }
-    background-image: url(http://i.imgur.com/hxTMFZW.jpg);
+    background-image: url(https://i.imgur.com/hxTMFZW.jpg);
     background-position: center;
     background-size: cover;
 
@@ -150,7 +150,7 @@ export default {
       bottom: 10%;
       float: left;
     }
-    background-image: url(http://i.imgur.com/FL9mwpd.jpg);
+    background-image: url(https://i.imgur.com/FL9mwpd.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -163,7 +163,7 @@ export default {
     .code-box {
       box-shadow: 0 0 0.25em 0.25em #ddd
     }
-    background-image: url(http://i.imgur.com/kmmHith.jpg);
+    background-image: url(https://i.imgur.com/kmmHith.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -176,7 +176,7 @@ export default {
       letter-spacing: 1.5px;
       margin-top: 50%
     }
-    background-image: url(http://i.imgur.com/yO2ivoD.jpg);
+    background-image: url(https://i.imgur.com/yO2ivoD.jpg);
     background-position: center;
     background-size: cover;
   }

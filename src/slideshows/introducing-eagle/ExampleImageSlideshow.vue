@@ -15,19 +15,19 @@ export default {
   data: function () {
     var images = {
       'baby bunnies': [
-        'http://i.imgur.com/1PL2k1H.jpg',
-        'http://i.imgur.com/GfFUcPQ.jpg',
-        'http://i.imgur.com/et8w8Rn.gif'
+        'https://i.imgur.com/1PL2k1H.jpg',
+        'https://i.imgur.com/GfFUcPQ.jpg',
+        'https://i.imgur.com/et8w8Rn.gif'
       ],
       'funny kitties': [
         'https://i.imgur.com/P7iyH.png',
-        'http://i.imgur.com/sHOqlJc.jpg',
-        'http://i.imgur.com/wiAwNQZ.gif'
+        'https://i.imgur.com/sHOqlJc.jpg',
+        'https://i.imgur.com/wiAwNQZ.gif'
       ],
       'fluffy puppies': [
-        'http://i.imgur.com/Scj7lzM.jpg',
-        'http://i.imgur.com/FyFhTEE.jpg',
-        'http://i.imgur.com/G62BWuI.gif'
+        'https://i.imgur.com/Scj7lzM.jpg',
+        'https://i.imgur.com/FyFhTEE.jpg',
+        'https://i.imgur.com/G62BWuI.gif'
       ]
     }
     return {

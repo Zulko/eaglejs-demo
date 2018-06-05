@@ -6,12 +6,14 @@ import App from './App'
 import Home from './Home'
 
 import Eagle from 'eagle.js'
+import 'eagle.js/dist/eagle.css'
 
 import slideshows from './slideshows/slideshows.js'
 /* eslint-disable no-new */
 
 Vue.use(Eagle)
 Vue.use(Router)
+Vue.config.productionTip = false
 
 var routes = []
 slideshows.list.forEach(function (slideshow) {
@@ -22,17 +24,8 @@ slideshows.list.forEach(function (slideshow) {
 })
 routes.push({ path: '*', component: Home })
 
-routes.push({
-  path: '/',
-  name: 'Home',
-  component: Home
-})
-console.log(routes)
-
 var router = new Router({
   routes
-  // hashbang: true
-  // mode: 'history'
 })
 
 new Vue({

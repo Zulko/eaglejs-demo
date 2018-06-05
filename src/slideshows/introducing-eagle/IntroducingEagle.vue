@@ -132,11 +132,81 @@
 
     figures-slide(enter='flipInY', leave='rollOut', :skip="['slideReuse', 'themes', 'interactivity'].some(function (e) {return slideCategories[e].show})")
 
+    slide(:steps='5' enter='fadeIn' leave='fadeOut')
+      h3 Presenter Mode
+      p.center What if I'm too lazy and cannot remember my notes when doing a presentation?
+      .center
+        eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          p(v-if="step >= 2")
+            | By default pressing P toggles Presenter Mode
+        eg-transition(enter='bounceInRight' leave='bounceOutRight')
+          p(v-if="step >= 3")
+            | You have a cloned child view which shares parent's control
+        eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          p(v-if="step >= 4")
+            | Then on parent window you can have all the fun!
+        eg-transition(enter='fadeIn' leave='fadeOut')
+          eg-modal(v-if="step >= 5")
+            h3 PUSH THE P BUTTON NOW!!:
+            .center
+              img(:src="preloadedImages['pushButton']",
+                  :style="{height: '10em'}")
+
+    slide(:steps='5' enter='fadeIn' leave='fadeOut')
+      h3(v-if="childWindow")
+        | Speaker Notes
+      h3(v-if="parentWindow")
+        | Presentation
+      h3(v-if="!childWindow && !parentWindow")
+        | Press P if you haven't
+      p.center(v-if="childWindow") We can have some fun in our parent window!
+      p.center(v-if="parentWindow") I'm doing a very serious talk right now
+      .center
+        eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          p(v-if="step >= 2")
+            | Eagle.js is easy to use
+        eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          h6(v-if="step >= 2 && childWindow")
+            | we can have a timer here: {{ slideTimer }}
+        eg-transition(enter='bounceInRight' leave='bounceOutRight')
+          p(v-if="step >= 3")
+            | Eagle.js has max hackability
+        eg-transition(enter='bounceInRight' leave='bounceOutRight')
+          h6(v-if="step >= 3 && childWindow")
+            | we can display the current slide index here: {{ currentSlideIndex }}
+        eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          p(v-if="step >= 4")
+            | Eagle.js is modular
+        eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          h6(v-if="step >= 4 && childWindow")
+            | we also could insert our notes here (duh)
+        eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          p(v-if="step >= 5")
+            | You can press P again to close child window
+
+    slide(:steps=6, leave='fadeOut')
+      eg-transition(enter='flipInX')
+        h3 To use Presenter Mode
+      eg-transition(enter='flipInX')
+        eg-code-block(lang='html').
+          .eg-slideshow
+
+            slide
+              p Eagle.is is awesome!<eg-code-comment :active='step === 2' enter='flipInY'>This would always show up</eg-code-comment>
+              p(v-if="parentWindow") I can be a note!<eg-code-comment :active='step === 3' enter='flipInY'>This would only show on child window</eg-code-comment>
+              p(v-if="childWindow") I can be a note too!<eg-code-comment :active='step === 4' enter='flipInY'>This would only show on parent window</eg-code-comment>
+      eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          p(v-if="step >= 5")
+            | It might be counter-intuitive that '(v-if="parentWindow")' is acutually child window. It's because it means this window has a parent window, thus making itself a child window.
+      eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
+          p(v-if="step >= 6")
+            | But the good thing is that you can put notes in either parent window or child window, so it really doesn't matter!
+
     slide(enter='zoomIn', leave='fadeOut')
       h3 That's all folks !
       p.center Think you can help ?
       .center
-        img.computerkid.shadowbox(src='http://i.imgur.com/AAlntwU.gif')
+        img.computerkid.shadowbox(src='https://i.imgur.com/AAlntwU.gif')
       p.center.
         I'm not a frontend person, so everyone<br />
         is welcome to contribute to <a href="https://github.com/Zulko/eagle.js" target='_blank'> the repo</a>.
@@ -197,13 +267,14 @@ export default {
         }
       },
       preloadedImages: {
-        computerKid: 'http://i.imgur.com/AAlntwU.gif',
-        youRightNow: 'http://i.imgur.com/DFBTj0a.gif',
-        bretagne: 'http://i.imgur.com/rYkJ6I8.jpg',
-        forrestRoad: 'http://i.imgur.com/hxTMFZW.jpg',
-        starrySky: 'http://i.imgur.com/yO2ivoD.jpg',
-        cityBokeh: 'http://i.imgur.com/kmmHith.jpg',
-        darkWoods: 'http://i.imgur.com/FL9mwpd.jpg'
+        computerKid: 'https://i.imgur.com/AAlntwU.gif',
+        youRightNow: 'https://i.imgur.com/DFBTj0a.gif',
+        bretagne: 'https://i.imgur.com/rYkJ6I8.jpg',
+        forrestRoad: 'https://i.imgur.com/hxTMFZW.jpg',
+        starrySky: 'https://i.imgur.com/yO2ivoD.jpg',
+        cityBokeh: 'https://i.imgur.com/kmmHith.jpg',
+        darkWoods: 'https://i.imgur.com/FL9mwpd.jpg',
+        pushButton: 'https://i.imgur.com/KaAyvZ5.gif'
       }
     }
   },
@@ -224,7 +295,7 @@ export default {
 </script>
 
 <style lang='scss'>
-@import 'node_modules/eagle.js/src/themes/agrume/agrume';
+@import 'node_modules/eagle.js/dist/themes/agrume/agrume';
 #IntroducingEagle {
   .frontpage {
     img {
@@ -244,7 +315,6 @@ export default {
     background-position: center center;
     background-repeat:  no-repeat;
     background-size: contain;
-
   }
 
   .quarter {
@@ -279,6 +349,10 @@ export default {
 
   a {
     color: black;
+  }
+
+  .parentWindow {
+    border: solide 1px red;
   }
 }
 </style>

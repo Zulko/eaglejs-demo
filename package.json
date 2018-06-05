@@ -1,9 +1,8 @@
 {
   "name": "eaglejs-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Example presentation with Eagle.js",
   "author": "Zulko",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
@@ -11,7 +10,7 @@
   },
   "dependencies": {
     "chart.js": "2.5.0",
-    "eagle.js": "0.1.3",
+    "eagle.js": "0.1.6",
     "vue": "^2.1.10",
     "vue-router": "^2.2.0"
   },
