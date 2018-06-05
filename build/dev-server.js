@@ -5,6 +5,8 @@ if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
 }
 
+process.noDeprecation = true
+
 var opn = require('opn')
 var path = require('path')
 var express = require('express')

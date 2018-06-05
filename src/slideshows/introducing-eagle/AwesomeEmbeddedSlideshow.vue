@@ -51,21 +51,21 @@ export default {
   data: function () {
     return {
       preloadedImages: {
-        hiThere: 'http://i.imgur.com/ZLT46UN.jpg',
-        hopeyoulikeit: 'http://i.imgur.com/N06RFlq.jpg',
-        seeAnything: 'http://i.imgur.com/5EuWG4w.jpg',
-        OmgEmbedded: 'http://i.imgur.com/wucwFvf.jpg',
-        reallyok: 'http://i.imgur.com/qVTNk3Q.jpg',
-        thatall: 'http://i.imgur.com/AExXJwF.jpg',
-        bunny1: 'http://i.imgur.com/1PL2k1H.jpg',
-        bunny2: 'http://i.imgur.com/GfFUcPQ.jpg',
-        bunny3: 'http://i.imgur.com/et8w8Rn.gif',
+        hiThere: 'https://i.imgur.com/ZLT46UN.jpg',
+        hopeyoulikeit: 'https://i.imgur.com/N06RFlq.jpg',
+        seeAnything: 'https://i.imgur.com/5EuWG4w.jpg',
+        OmgEmbedded: 'https://i.imgur.com/wucwFvf.jpg',
+        reallyok: 'https://i.imgur.com/qVTNk3Q.jpg',
+        thatall: 'https://i.imgur.com/AExXJwF.jpg',
+        bunny1: 'https://i.imgur.com/1PL2k1H.jpg',
+        bunny2: 'https://i.imgur.com/GfFUcPQ.jpg',
+        bunny3: 'https://i.imgur.com/et8w8Rn.gif',
         kitty1: 'https://i.imgur.com/P7iyH.png',
-        kitty2: 'http://i.imgur.com/sHOqlJc.jpg',
-        kitty3: 'http://i.imgur.com/wiAwNQZ.gif',
-        puppy1: 'http://i.imgur.com/Scj7lzM.jpg',
-        puppy2: 'http://i.imgur.com/FyFhTEE.jpg',
-        puppy3: 'http://i.imgur.com/G62BWuI.gif'
+        kitty2: 'https://i.imgur.com/sHOqlJc.jpg',
+        kitty3: 'https://i.imgur.com/wiAwNQZ.gif',
+        puppy1: 'https://i.imgur.com/Scj7lzM.jpg',
+        puppy2: 'https://i.imgur.com/FyFhTEE.jpg',
+        puppy3: 'https://i.imgur.com/G62BWuI.gif'
       }
     }
   },
@@ -110,36 +110,36 @@ export default {
     }
 
     .slide-intro {
-      background-image: url('http://i.imgur.com/ZLT46UN.jpg');
+      background-image: url('https://i.imgur.com/ZLT46UN.jpg');
       background-position: center bottom;
       background-size: 28em;
     }
     .slide-two {
-      background-image: url('http://i.imgur.com/N06RFlq.jpg');
+      background-image: url('https://i.imgur.com/N06RFlq.jpg');
       background-position: center bottom;
       background-size: 25em;
     }
 
     .slide-three {
-      background-image: url('http://i.imgur.com/5EuWG4w.jpg');
+      background-image: url('https://i.imgur.com/5EuWG4w.jpg');
       background-position: center bottom;
       background-size: 30em;
     }
 
     .slide-four {
-      background-image: url('http://i.imgur.com/wucwFvf.jpg');
+      background-image: url('https://i.imgur.com/wucwFvf.jpg');
       background-position: right bottom;
       background-size: 17em;
     }
 
     .slide-five {
-      background-image: url('http://i.imgur.com/qVTNk3Q.jpg');
+      background-image: url('https://i.imgur.com/qVTNk3Q.jpg');
       background-position: right bottom;
       background-size: 9em;
     }
 
     .slide-six {
-      background-image: url('http://i.imgur.com/AExXJwF.jpg');
+      background-image: url('https://i.imgur.com/AExXJwF.jpg');
       background-position: center bottom;
       background-size: 30em;
     }

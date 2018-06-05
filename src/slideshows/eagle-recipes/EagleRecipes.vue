@@ -265,8 +265,5 @@ export default {
     background-image: none;
     background-color: white;
   }
-
 }
-
-
 </style>
