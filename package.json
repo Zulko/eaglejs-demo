@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "chart.js": "2.5.0",
-    "eagle.js": "0.1.6",
+    "eagle.js": "0.2.0",
     "vue": "^2.1.10",
     "vue-router": "^2.2.0"
   },
