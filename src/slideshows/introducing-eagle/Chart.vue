@@ -6,12 +6,12 @@ canvas(:id='id', :width='width', :height='height')
 import Chart from 'chart.js'
 export default {
   props: {
-    id: {default: () => Math.random().toString(36).substr(2, 10)},
-    width: {default: 400},
-    height: {default: 400},
-    data: {default: () => ({})},
-    options: {default: () => ({})},
-    type: {default: 'bar'}
+    id: { default: () => Math.random().toString(36).substr(2, 10) },
+    width: { default: 400 },
+    height: { default: 400 },
+    data: { default: () => ({}) },
+    options: { default: () => ({}) },
+    type: { default: 'bar' }
   },
   data: function () {
     return {

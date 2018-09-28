@@ -71,8 +71,6 @@
       eg-modal(v-if='step === 2')
         h3 I am a modal
 
-
-
 </template>
 
 <script>

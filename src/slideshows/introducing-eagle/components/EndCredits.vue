@@ -16,7 +16,7 @@ PUBLIC DOMAIN
 <script>
 export default {
   props: {
-    username: {default: 'Tracy'}
+    username: { default: 'Tracy' }
   },
   data: function () {
     return {

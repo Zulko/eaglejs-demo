@@ -64,7 +64,6 @@
             img(:src="preloadedImages['youRightNow']",
                 :style="{height: '10em'}")
 
-
     slide(:steps=4, leave='fadeOut')
       eg-transition(enter='flipInX')
         h3 Show me the codey !!!
@@ -107,8 +106,8 @@
 
       .center
         p What's your favourite ?
-        eg-radio.inline(v-for='pref in preferences', v-model="preference",
-                        :label="pref.label" )
+        eg-radio-button.inline(v-for='(pref, i) in preferences', v-model="preference",
+                        :label="pref.label" :key="i")
           p {{ pref.text}}
           eg-triggered-message(:trigger='preference=== pref.label',
                               :duration='3', position='top right',
@@ -211,7 +210,6 @@
         I'm not a frontend person, so everyone<br />
         is welcome to contribute to <a href="https://github.com/Zulko/eagle.js" target='_blank'> the repo</a>.
 
-
     slide(enter='fadeIn')
       h3 Thank you !
       p This slideshow's so fresh, it has end credits.
@@ -229,10 +227,10 @@ export default {
     path: 'introducing-eagle'
   },
   components: {
-    'awesome-inserted-slide': require('./AwesomeInsertedSlide'),
-    'figures-slide': require('./FiguresSlide'),
-    'end-credits': require('./components/EndCredits'),
-    'themes-slideshow': require('../themes-slideshow/ThemesSlideshow')
+    'awesome-inserted-slide': require('./AwesomeInsertedSlide').default,
+    'figures-slide': require('./FiguresSlide').default,
+    'end-credits': require('./components/EndCredits').default,
+    'themes-slideshow': require('../themes-slideshow/ThemesSlideshow').default
   },
   data: function () {
     return {

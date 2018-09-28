@@ -1,7 +1,7 @@
 <template lang="pug">
 .eg-slideshow
-  image-slide(v-for='imageUrl, i in images[preference]',
-              :enter="(i === 0) ? null : 'slideInRight'", leave='slideOutLeft', :url='imageUrl')
+  eg-image-slide(v-for='imageUrl, i in images[preference]',
+              :enter="(i === 0) ? null : 'slideInRight'", leave='slideOutLeft', :url='imageUrl' :key='i')
 </template>
 
 <script>
@@ -10,7 +10,7 @@ import eagle from 'eagle.js'
 export default {
   mixins: [eagle.slideshow],
   props: {
-    preference: {default: 'funny kitties'}
+    preference: { default: 'funny kitties' }
   },
   data: function () {
     var images = {

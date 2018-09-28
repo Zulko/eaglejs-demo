@@ -7,7 +7,6 @@
       img.logo(src='./eagle-jam.png')
       p.center 100% Pure Code, no Artificial Swag
 
-
     v-slide
       h3 Getting started
 
@@ -205,8 +204,8 @@ import DemoSlideshow from './DemoSlideshow'
 var TransitionedSlide = {
   mixins: [eagle.slide],
   props: {
-    enter: {default: 'slideInRight'},
-    leave: {default: 'slideOutLeft'}
+    enter: { default: 'slideInRight' },
+    leave: { default: 'slideOutLeft' }
   }
 }
 

@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import slideshows from 'slideshows/slideshows'
+import slideshows from './slideshows/slideshows.js'
 
 export default {
   data: function () {

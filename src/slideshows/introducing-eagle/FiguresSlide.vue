@@ -27,7 +27,7 @@ import chart from './Chart'
 export default {
   components: { chart },
   props: {
-    steps: {default: 5}
+    steps: { default: 5 }
   },
   data: function () {
     return {

@@ -45,8 +45,8 @@ import ExampleImageSlideshow from './ExampleImageSlideshow'
 export default {
   mixins: [eagle.slideshow],
   props: {
-    preference: {default: 'baby bunnies'},
-    username: {default: 'Tracy'}
+    preference: { default: 'baby bunnies' },
+    username: { default: 'Tracy' }
   },
   data: function () {
     return {
@@ -172,7 +172,6 @@ deadpool: Oh im sorry, didn't mean to impress you
 dp: Let me make it right with some of your favorite animals.
 
 Oh yeah, oh oh, yeah
-
 
 dp It's just a slideshow embedded in a slideshow embedded in an inserted slideshow
  But I really wouldn't want to blow your mind.
