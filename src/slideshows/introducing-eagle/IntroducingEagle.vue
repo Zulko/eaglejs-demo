@@ -196,7 +196,7 @@
               p(v-if="childWindow") I can be a note too!<eg-code-comment :active='step === 4' enter='flipInY'>This would only show on parent window</eg-code-comment>
       eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
           p(v-if="step >= 5")
-            | It might be counter-intuitive that '(v-if="parentWindow")' is acutually child window. It's because it means this window has a parent window, thus making itself a child window.
+            | It might be counter-intuitive that '(v-if="parentWindow")' is actually child window. It's because it means this window has a parent window, thus making itself a child window.
       eg-transition(enter='bounceInLeft' leave='bounceOutLeft')
           p(v-if="step >= 6")
             | But the good thing is that you can put notes in either parent window or child window, so it really doesn't matter!
