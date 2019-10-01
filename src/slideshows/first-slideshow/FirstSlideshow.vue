@@ -1,9 +1,9 @@
 <template lang='pug'>
 #MyFirstSlideshow
   .eg-slideshow
-    slide
-      h1 Hi there !
-      h4 This is your first slideshow !
+    slide(enter='bounceInDown' leave='fadeOut')
+      h3 A small talk about
+      include assets/habiticaLogo.svg
 
     slide(enter='bounceInRight' leave='fadeOut')
       h3 Hey modify me !
@@ -35,12 +35,17 @@ export default {
 #MyFirstSlideshow{
   .eg-slideshow{
     font-family: 'Raleway';
-    background-color: #eef;
+    background-image: url('assets/habiticaBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .eg-slide{
       .eg-slide-content{
         width: 25em;
         max-width: 80%;
         margin: 0 auto;
+        color: #432874;
+        transform: translateY(50%);
       }
     }
   }
@@ -48,6 +53,11 @@ export default {
     width: 25em;
     max-width: 80%;
     margin: 0 auto;
+  }
+
+  #habiticaLogo{
+    filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, .7));
+
   }
 }
 </style>
