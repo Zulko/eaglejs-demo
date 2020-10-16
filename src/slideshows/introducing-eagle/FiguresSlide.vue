@@ -22,7 +22,7 @@ eg-transition(:enter='enter', :leave='leave')
                   :height='250')
 </template>
 <script>
-import eagle from 'eagle.js'
+import { Slide } from 'eagle.js'
 import chart from './Chart'
 export default {
   components: { chart },
@@ -104,7 +104,7 @@ export default {
       }
     }
   },
-  mixins: [eagle.slide]
+  mixins: [Slide]
 }
 </script>
 <style lang='scss' scoped>

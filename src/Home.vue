@@ -24,7 +24,8 @@
           .embedded-slideshow-container
             component(:is="slideshow", :embedded='true',
                       :keyboardNavigation='false',
-                      :mouseNavigation='false')
+                      :mouseNavigation='false',
+                      )
         .caption
           h3 {{slideshow.infos.title}}
           p.thumbnail-description {{slideshow.infos.description}}
@@ -36,7 +37,9 @@ import slideshows from './slideshows/slideshows.js'
 export default {
   data: function () {
     return {
-      slideshows: slideshows.list
+      slideshows: slideshows.list,
+      childWindow: null,
+      parentWindow: null
     }
   },
   mounted: function () {

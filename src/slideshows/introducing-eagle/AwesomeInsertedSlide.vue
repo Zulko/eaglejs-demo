@@ -50,7 +50,7 @@ eg-transition(:enter='enter', :leave='leave')
 
 <script>
 import AwesomeEmbeddedSlideshow from './AwesomeEmbeddedSlideshow'
-import eagle from 'eagle.js'
+import { Slide } from 'eagle.js'
 export default {
   props: {
     steps: { default: 14 },
@@ -60,7 +60,7 @@ export default {
   components: {
     'awesome-embedded-slideshow': AwesomeEmbeddedSlideshow
   },
-  mixins: [eagle.slide]
+  mixins: [Slide]
 }
 </script>
 <style lang='scss' scoped>

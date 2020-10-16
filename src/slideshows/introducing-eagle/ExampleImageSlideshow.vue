@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import eagle from 'eagle.js'
+import { Slideshow } from 'eagle.js'
 
 export default {
-  mixins: [eagle.slideshow],
+  mixins: [Slideshow],
   props: {
     preference: { default: 'funny kitties' }
   },

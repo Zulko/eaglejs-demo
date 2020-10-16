@@ -21,7 +21,7 @@ export default {
   data: function () {
     return {
       categories: {
-        'Crew': [
+        Crew: [
           {
             name: this.username,
             role: 'Internet Person'
@@ -39,7 +39,7 @@ export default {
             role: 'Author'
           }
         ],
-        'Software': [
+        Software: [
           {
             name: 'Vue.js',
             role: 'Front-end engine'
@@ -65,7 +65,7 @@ export default {
             role: '(Bad) highlighting'
           }
         ],
-        'Assets': [
+        Assets: [
           {
             name: 'Irfan iLias',
             role: 'Background Pattern'
