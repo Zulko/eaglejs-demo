@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "validate_prod": "npm run build; http-server dist"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
@@ -33,6 +34,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^7.1.0",
+    "http-server": "^0.12.3",
     "node-sass": "^4.14.1",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
