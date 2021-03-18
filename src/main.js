@@ -3,9 +3,9 @@ import Router from 'vue-router'
 import App from './App'
 import Home from './Home'
 
-import Eagle, { Options } from 'eagle.js'
-import 'eagle.js/dist/eagle.css'
+import Eagle, { Options, Presenter, CodeBlock, CodeComment, Toggle, RadioButton, Timer, TriggeredMessage, Modal, ImageSlide } from 'eagle.js'
 import hljs from 'highlight.js'
+import 'animate.css/animate.compat.css'
 
 import slideshows from './slideshows/slideshows.js'
 /* eslint-disable no-new */
@@ -14,8 +14,17 @@ Vue.use(Eagle)
 Vue.use(Router)
 Vue.config.productionTip = false
 Options.hljs = hljs
+Eagle.use(Presenter)
+Eagle.use(CodeBlock)
+Eagle.use(CodeComment)
+Eagle.use(Toggle)
+Eagle.use(RadioButton)
+Eagle.use(Timer)
+Eagle.use(TriggeredMessage)
+Eagle.use(Modal)
+Eagle.use(ImageSlide)
 
-let routes = []
+const routes = []
 slideshows.list.forEach(function (slideshow) {
   routes.push({
     path: '/' + slideshow.infos.path,
@@ -24,7 +33,7 @@ slideshows.list.forEach(function (slideshow) {
 })
 routes.push({ path: '*', component: Home })
 
-let router = new Router({
+const router = new Router({
   routes
 })
 

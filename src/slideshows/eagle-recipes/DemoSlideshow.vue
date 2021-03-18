@@ -74,10 +74,10 @@
 </template>
 
 <script>
-import eagle from 'eagle.js'
+import { Slideshow } from 'eagle.js'
 
 export default {
-  mixins: [eagle.slideshow],
+  mixins: [Slideshow],
   infos: {
     title: 'Demo recipes',
     description: 'Demos for Eagle recipes',

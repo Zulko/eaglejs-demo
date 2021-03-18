@@ -39,12 +39,14 @@
 </template>
 
 <script>
-import eagle from 'eagle.js'
+import { Slideshow } from 'eagle.js'
 import ExampleImageSlideshow from './ExampleImageSlideshow'
 
 export default {
-  mixins: [eagle.slideshow],
+  mixins: [Slideshow],
   props: {
+    childWindow: null,
+    parentWindow: null,
     preference: { default: 'baby bunnies' },
     username: { default: 'Tracy' }
   },

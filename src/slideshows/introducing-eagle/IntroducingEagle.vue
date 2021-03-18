@@ -217,10 +217,10 @@
 </template>
 
 <script>
-import eagle from 'eagle.js'
+import { Slideshow } from 'eagle.js'
 
 export default {
-  mixins: [eagle.slideshow],
+  mixins: [Slideshow],
   infos: {
     title: 'Introducing Eagle.js',
     description: 'Watch this first if you are new to Eagle.js',
@@ -234,6 +234,8 @@ export default {
   },
   data: function () {
     return {
+      childWindow: null,
+      parentWindow: null,
       username: 'Tracy',
       preference: 'baby bunnies',
       preferences: [
@@ -282,9 +284,9 @@ export default {
         'baby bunnies': 'Yeeeeah my favorite too !',
         'fluffy puppies': 'Wow so original.',
         'funny kitties': 'Good for you ' + this.username + '.',
-        'Theming': 'Ok ' + this.username + ', whatever.',
+        Theming: 'Ok ' + this.username + ', whatever.',
         'Slide reuse': 'Seriously ' + this.username + ' you <em>want</em> to see this.',
-        'Interactivity': 'Well that\'s this slide, ' + this.username +
+        Interactivity: 'Well that\'s this slide, ' + this.username +
                          '. <br /> A bit too late to unsee it, heh ?'
       }[name]
     }

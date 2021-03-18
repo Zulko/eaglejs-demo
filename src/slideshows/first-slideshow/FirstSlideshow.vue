@@ -18,9 +18,9 @@
 </template>
 
 <script>
-import eagle from 'eagle.js'
+import { Slideshow } from 'eagle.js'
 export default {
-  mixins: [ eagle.slideshow ],
+  mixins: [Slideshow],
   infos: {
     // These infos appear on the home page, below the slideshow's thumbnail
     title: 'Your First Slideshow',

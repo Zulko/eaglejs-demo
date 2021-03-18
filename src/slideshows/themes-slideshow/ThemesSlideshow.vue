@@ -42,9 +42,9 @@
         h3 Your bad taste is the limit
 </template>
 <script>
-import eagle from 'eagle.js'
+import { Slideshow } from 'eagle.js'
 export default {
-  mixins: [eagle.slideshow],
+  mixins: [Slideshow],
   infos: {
     title: 'Themes Slideshows',
     description: 'You can change everything !',

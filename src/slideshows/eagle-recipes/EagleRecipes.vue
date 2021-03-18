@@ -44,9 +44,9 @@
           The &lt;script&gt; tag loads Eagle and specifies options:
         eg-code-block(lang='html').
           &lt;script&gt;
-          import eagle from 'eagle.js'
+          import  { Slideshow } from 'eagle.js'
           export default {
-            mixins: [ eagle.slideshow ],
+            mixins: [Slideshow],
             infos: {
               title: 'Your First Slideshow',
               description: 'A boilerplate to get you started',
@@ -198,11 +198,11 @@
 </template>
 
 <script>
-import eagle from 'eagle.js'
+import { Slideshow, Slide } from 'eagle.js'
 import DemoSlideshow from './DemoSlideshow'
 
 var TransitionedSlide = {
-  mixins: [eagle.slide],
+  mixins: [Slide],
   props: {
     enter: { default: 'slideInRight' },
     leave: { default: 'slideOutLeft' }
@@ -210,7 +210,7 @@ var TransitionedSlide = {
 }
 
 export default {
-  mixins: [eagle.slideshow],
+  mixins: [Slideshow],
   data: function () {
     return {
       fullPageWidth: null,
